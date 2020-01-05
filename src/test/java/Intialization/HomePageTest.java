@@ -13,13 +13,11 @@ public class HomePageTest extends TestBase {
 	HomePage hm;
 	LoginPage lg;
 	
+	
 	public  HomePageTest()
 	{
 		super();
 	}
-	
-	
-	
 	@BeforeTest
 	public void Setup()
 	{
@@ -29,26 +27,32 @@ public class HomePageTest extends TestBase {
 	@Test(priority = 1)
 	public void login()
 	{
-	LoginPage lg = new LoginPage();
+	lg = new LoginPage();
 		lg.login(prop.getProperty("userid"), prop.getProperty("password"));
-		/*hm = new HomePage();
-		
-		hm.swtch();
-		Boolean bm =hm.PIMverify();
-		Assert.assertTrue(bm);*/
-	
 	}
 	
 	@Test(priority = 2)
 	public void clickAdd()
 	{
     
-		
+		hm = new HomePage();
 		hm.swtch();
 		Boolean bm =hm.PIMverify();
 		Assert.assertTrue(bm);
 	}
+	@Test(priority = 3)
+	public void clickAddButtonTest() throws Exception
+	{
+		
+		Thread.sleep(3000);
+		hm.clickOnAdd();
 	
+	}
+	/*@Test(priority = 4)
+	public void alertTest()
+	{
+		hm.alert();
+	}*/
 	
 	
 	

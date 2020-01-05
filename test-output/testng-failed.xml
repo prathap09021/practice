@@ -5,7 +5,7 @@
     <classes>
       <class name="Intialization.HomePageTest">
         <methods>
-          <include name="clickAdd"/>
+          <include name="clickAddButtonTest"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- Intialization.HomePageTest -->

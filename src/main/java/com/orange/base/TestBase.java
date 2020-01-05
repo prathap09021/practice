@@ -6,14 +6,18 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestBase {
 	
 		public static	Properties prop;
 		public static	WebDriver dr;
+		
+		//public static Alert A;
+
 	
 	public TestBase()
 	{

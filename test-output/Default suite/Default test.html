@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 03 18:25:38 IST 2020</td>
+<td>Started on:</td><td>Sun Jan 05 09:39:49 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12164 ms)</td>
+<tr><td>Total time:</td><td>43 seconds (43248 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,9 +75,34 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Intialization.HomePageTest.clickAdd()'><b>clickAdd</b><br>Test class: Intialization.HomePageTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at Intialization.HomePageTest.clickAdd(HomePageTest.java:47)
+<td title='Intialization.HomePageTest.clickAddButtonTest()'><b>clickAddButtonTest</b><br>Test class: Intialization.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;button&quot; class=&quot;savebutton&quot; id=&quot;btnEdit&quot; onclick=&quot;addEmpMain(); return false;&quot; onmouseover=&quot;moverButton(this);&quot; onmouseout=&quot;moutButton(this);&quot; value=&quot;Save&quot; title=&quot;Save&quot;&gt; is not clickable at point (269, 206). Other element would receive the click: &lt;div class=&quot;mask&quot; id=&quot;wait_mask&quot; style=&quot;height: 785px; width: 1920px; display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=79.0.3945.88)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41d775935f366ec158c46b3466180433
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.orange.qa.pages.HomePage.clickOnAdd(HomePage.java:29)
+	at Intialization.HomePageTest.clickAddButtonTest(HomePageTest.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -102,9 +127,34 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-</pre></div><a href='#' onClick='toggleBox("stack-trace13401711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace13401711'><pre>java.lang.NullPointerException
-	at Intialization.HomePageTest.clickAdd(HomePageTest.java:47)
+</pre></div><a href='#' onClick='toggleBox("stack-trace30076333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace30076333'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;button&quot; class=&quot;savebutton&quot; id=&quot;btnEdit&quot; onclick=&quot;addEmpMain(); return false;&quot; onmouseover=&quot;moverButton(this);&quot; onmouseout=&quot;moutButton(this);&quot; value=&quot;Save&quot; title=&quot;Save&quot;&gt; is not clickable at point (269, 206). Other element would receive the click: &lt;div class=&quot;mask&quot; id=&quot;wait_mask&quot; style=&quot;height: 785px; width: 1920px; display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=79.0.3945.88)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41d775935f366ec158c46b3466180433
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.orange.qa.pages.HomePage.clickOnAdd(HomePage.java:29)
+	at Intialization.HomePageTest.clickAddButtonTest(HomePageTest.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -130,7 +180,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
 </pre></div></td>
-<td>0</td>
+<td>9</td>
 <td>Intialization.HomePageTest@1ccaa</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -141,9 +191,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='Intialization.HomePageTest.clickAdd()'><b>clickAdd</b><br>Test class: Intialization.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Intialization.HomePageTest@1ccaa</td></tr>
+<tr>
 <td title='Intialization.HomePageTest.login()'><b>login</b><br>Test class: Intialization.HomePageTest</td>
 <td></td>
-<td>5</td>
+<td>13</td>
 <td>Intialization.HomePageTest@1ccaa</td></tr>
 </table><p>
 </body>
